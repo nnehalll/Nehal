@@ -6,8 +6,8 @@ def home():
     return{"data": "This is a home page"}
 
 @app.get('/echo')
-def echo(name: str, surname: str = ""):
-    return {"data": f"Hello {name} {surname}!!"}
+def echo():
+    return {"data": f"Hello World!!"}
 
 #Output URL: http://127.0.0.1:8000/echo?name=Nehal&surname=Joshi
 #pip list: Gives List of modules in tabular format
